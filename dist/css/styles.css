@@ -11462,7 +11462,7 @@ html {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  max-width: 35rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -11507,3 +11507,50 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* .modal a:hover{
+  opacity: 1;
+}
+
+.modal a{
+  opacity: .7;
+} */
+nav img {
+  height: 2rem;
+}
+
+ .skill figcaption{
+  font-size: 2rem;
+} 
+.skill p {
+  font-size: 1.6rem;
+}
+
+.border{
+  border: 1px solid black;
+}
+
+.modalTextLeft{
+  text-align: left;
+}
+
+.bigger{
+  font-size: 1.6rem;
+}
+
+.skill img {
+  width: 5rem;
+}
+
+@media (max-width: 575px) {
+  .skill img{
+    width: 10rem;
+  }
+  .skill figcaption{
+    font-size: 2rem;
+  }
+  .skill p {
+    font-size: 1.6rem;
+  }
+}
+

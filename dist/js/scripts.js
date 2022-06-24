@@ -52,3 +52,36 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+$('#submitButton').on('click', function () {
+    
+    let name = $('#name').val();
+    let email = $('#email').val();
+    let subject = $('#subject').val();
+    let body = $('#body').val();
+    console.log(name);
+    console.log(email);
+    console.log(subject);
+    console.log(body);
+    $.ajax({
+        url: './dist/sendEmail.php',
+        method: 'POST',
+        dataType: 'json',
+        data: {
+            name: name,
+            email: email,
+            subject: subject,
+            body: body
+        }, success: function (response) {
+            console.log('Sent');
+        },         error: function(jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR);
+            console.log(textStatus);
+            console.log(errorThrown);
+            console.log('error');
+        }
+    })
+})
+
+    
