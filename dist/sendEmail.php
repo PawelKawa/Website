@@ -26,7 +26,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail -> setFrom($email, $name);
     $mail -> addAddress("ramzord@gmail.com");
     $mail -> Subject = ("$email ($subject)");
-    $mail -> Body = $body;
+    $mail -> Body = "<h3>Name: $name <br>Email: $email <br>Subject: $subject<br> Message: $body </h3>";
 
     if($mail->send()){
         $status = "success";

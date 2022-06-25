@@ -40,7 +40,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="./dist/assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="./dist/assets/img/1.jpg" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Pawel Kawa</h1>
                 <!-- Icon Divider-->
@@ -251,7 +251,7 @@
             </div>
         </section>
 
-
+       
         <!-- Contact Section-->
         <section class="page-section bg-primary" id="contact">
             <div class="container">
@@ -273,47 +273,28 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" required placeholder="Enter your name..."/>
                                 <label for="name">Name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" required placeholder="name@example.com"  />
                                 <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div> 
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="subject" type="text" placeholder="Subject" data-sb-validations="required" />
+                                <input class="form-control" id="subject" type="text" required placeholder="Subject" />
                                 <label for="name">Subject</label>
-                                <div class="invalid-feedback" data-sb-feedback="subject:required">A subject is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="body" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="body" type="text" required placeholder="Enter your message here..." style="height: 10rem" ></textarea>
                                 <label for="body">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="body:required">A message is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-secondary btn-xl disabled" id="submitButton" type="submit">Send</button>
+
+                            <button class="btn btn-secondary btn-xl " id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
@@ -374,11 +355,20 @@
                                     <p class="bigger">Portfolio project from IT Career Switch.</p>
                                     <p>This application is a “mobile first“ website that is operate equally well on desktop computers. It provides profiling for all countries through thepresentation of demographic, climatic, geographical and other data.</p>
                                     <!-- Portfolio Modal - Image-->
-                                        <a href="https://pawelkawa.co.uk/project1/index.html" target="_blank">
+                                        <!-- <a href="https://pawelkawa.co.uk/project1/index.html" target="_blank">
                                             <img class="img-fluid rounded mb-5" src="./dist/assets/img/portfolio/Gazetteer.JPG" alt="Gazetteer" />
-                                        </a>
+                                        </a> -->
+                                        <div class="imp-w">
+                                            <a class="" href="https://pawelkawa.co.uk/project1/index.html" target="_blank">
+                                                <img class="img-fluid rounded" src="./dist/assets/img/portfolio/Gazetteer.JPG" alt="..." 
+                                                />
+                                                <div class="check rounded">
+                                                    <div class=" text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="modalTextLeft">The application was developed using the following:</p>
+                                    <p class="modalTextLeft mt-5">The application was developed using the following:</p>
                                     <ul class="modalTextLeft">
                                         <li>HTML (bootstrap)</li>
                                         <li>CSS (bootstrap)</li>
@@ -426,12 +416,18 @@
 
                                     <p>“Create a desktop website that can also run on a mobile that allows for the maintenance of a company personnel database to see who's who, which department they are in and where they are”.</p>
                                     <!-- Portfolio Modal - Image-->
-                                        <a href="https://pawelkawa.co.uk/project2/index.html" target="_blank">
-                                            <img class="img-fluid rounded mb-5 border" src="./dist/assets/img/portfolio/Company Directory.JPG" alt="..." />
+                                    <div class="imp-w">
+                                        <a class="" href="https://pawelkawa.co.uk/project2/index.html" target="_blank">
+                                            <img class="img-fluid rounded border" src="./dist/assets/img/portfolio/Company Directory.JPG" alt="..." 
+                                            />
+                                            <div class="check rounded">
+                                                <div class="portfolio-item-caption-content text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
                                         </a>
+                                    </div>
                                 
                                     
-                                    <p class="modalTextLeft">The application was developed using the following:</p>
+                                    <p class="modalTextLeft mt-5">The application was developed using the following:</p>
                                     <ul class="modalTextLeft">
                                         <li>HTML, CSS (bootstrap)</li>
                                         <li>JavaScript (jQuery)</li>
@@ -495,7 +491,7 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <img class="img-fluid rounded" src="./dist/assets/img/itcs.jpg" alt="..." />
-
+                                    
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -527,12 +523,13 @@
             </div>
         </div>
 
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="./dist/js/jQuery.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="./dist/js/scripts.js"></script>
 
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>

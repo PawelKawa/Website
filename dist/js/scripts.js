@@ -54,8 +54,9 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-$('#submitButton').on('click', function () {
-    
+$('#contactForm').on('submit', function (e) {
+
+    preventDefault(e);
     let name = $('#name').val();
     let email = $('#email').val();
     let subject = $('#subject').val();
@@ -75,7 +76,18 @@ $('#submitButton').on('click', function () {
             body: body
         }, success: function (response) {
             console.log('Sent');
-        },         error: function(jqXHR, textStatus, errorThrown) {
+            document.getElementById("contactForm").reset();
+            Swal.fire(
+                'E-mail sent',
+                '',
+                'success'
+              )
+        }, error: function (jqXHR, textStatus, errorThrown) {
+            Swal.fire(
+                'Please try again later',
+                '',
+                'error'
+              )
             console.log(jqXHR);
             console.log(textStatus);
             console.log(errorThrown);
